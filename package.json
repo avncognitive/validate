@@ -1,0 +1,16 @@
+{
+  "name": "validate",
+  "version": "1.0.0",
+  "description": "Utility to Validate",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avneet",
+  "license": "ISC",
+  "dependencies": {
+    "crypto-js": "^4.1.1",
+    "lodash": "^4.17.21"
+  }
+}
