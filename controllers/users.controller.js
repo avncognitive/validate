@@ -1,14 +1,11 @@
 const createMessageController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const createMessageCustomController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const updateMessageStatusController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 // const rescheduleMessageController = async (req, res) => {
 //     console.log("mmmm");
@@ -18,5 +15,5 @@ module.exports = {
     createMessageController,
     createMessageCustomController,
     updateMessageStatusController,
-    
+
 }

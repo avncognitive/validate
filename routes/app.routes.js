@@ -5,6 +5,6 @@ const { verifyToken, verifySession } = require("../middlewares/verifyAuth");
 const appController = require("../controllers/app.controller");
 
 module.exports = () => {
-    
+
     return router;
 }

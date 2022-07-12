@@ -7,7 +7,7 @@ const {
     createMessageValidate,
     createMessageCustomValidate,
     updateMessageStatusValidate,
-   
+
 } = require('../middlewares/validators/usersValidator');
 
 module.exports = () => {

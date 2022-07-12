@@ -1,62 +1,48 @@
 const approveRejectUserController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const addStationController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const addCompanyDataController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const updateStationStatusController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 
 const editStationController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 
 const userInfoController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 
 const addRegionController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const getUserDetailsandAddController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const addRemoveStationsToCompanyController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const addRemoveStationsToUserController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const updateAccessPrivilegeController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 
 const getTableDataDynamoDBController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const updateIoTDeviceInfoStateController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const updateIoTDeviceInfoDataController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 // const stationsController = async(req,res)=>{
 //     console.log(req.body.region)

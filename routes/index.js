@@ -6,7 +6,7 @@ const generalRoutes = require("./general.routes");
 const usersRoutes = require("./users.routes");
 module.exports = (app) =>
     router
-    .get('/health',(req,res) => res.json({status: 200, msg: "test"}))
-    .use("/", generalRoutes())
-    .use("/admin",adminRoutes())
-    .use("/user",usersRoutes())
+        .get('/health', (req, res) => res.json({ status: 200, msg: "test" }))
+        .use("/", generalRoutes())
+        .use("/admin", adminRoutes())
+        .use("/user", usersRoutes())

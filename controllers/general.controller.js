@@ -1,29 +1,23 @@
 const register = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 
 const loginData = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const getuserFromTokenController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 const setMFAAuthCodeController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 
 const validatePageAccessController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 
 const securityQuestionController = async (req, res) => {
-    console.log("mmmm");
-    res.json({ status: 200, msg: "testmm" });
+    res.json({ status: 200, msg: "test" });
 }
 module.exports = {
     register,

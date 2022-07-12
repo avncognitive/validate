@@ -33,13 +33,13 @@ exports.createMessageValidate = [
         .withMessage('Please Enter Valid File Size')
         .bail(),
     check('destinationstations')
-    .custom((list) => (typeof list === 'object' && list && Array.isArray(list) && list.length ? true : false))
-    .withMessage('Destinationstations cannot be empty')
-      .bail(),
+        .custom((list) => (typeof list === 'object' && list && Array.isArray(list) && list.length ? true : false))
+        .withMessage('Destinationstations cannot be empty')
+        .bail(),
     check('destinationstationsIds')
-    .custom((list) => (typeof list === 'object' && list && Array.isArray(list) && list.length ? true : false))
-    .withMessage('destinationstationsIds cannot be empty')
-      .bail(),
+        .custom((list) => (typeof list === 'object' && list && Array.isArray(list) && list.length ? true : false))
+        .withMessage('destinationstationsIds cannot be empty')
+        .bail(),
     check('broadcastimmediate')
         .trim()
         .not()
@@ -145,7 +145,7 @@ exports.createMessageCustomValidate = [
         .isLength({ min: 2 })
         .withMessage('Please Enter Valid device on No.')
         .bail(),
-        check('hour')
+    check('hour')
         .trim()
         .not()
         .isEmpty()
@@ -153,7 +153,7 @@ exports.createMessageCustomValidate = [
         .isInt({ min: 1 })
         .withMessage('Please Enter Valid Hour')
         .bail(),
-        check('minutes')
+    check('minutes')
         .trim()
         .not()
         .isEmpty()
@@ -161,7 +161,7 @@ exports.createMessageCustomValidate = [
         .isInt({ min: 1 })
         .withMessage('Please Enter Valid Minutes')
         .bail(),
-        check('month')
+    check('month')
         .trim()
         .not()
         .isEmpty()
@@ -169,20 +169,20 @@ exports.createMessageCustomValidate = [
         .isInt({ min: 1 })
         .withMessage('Please Enter Valid Month')
         .bail(),
-        check('year')
+    check('year')
         .trim()
         .not()
         .isEmpty()
         .withMessage('Year Cannot Be Empty')
-        .isInt({ min:2022 })
+        .isInt({ min: 2022 })
         .withMessage('Please Enter Valid Year')
         .bail(),
-        check('_date')
+    check('_date')
         .trim()
         .not()
         .isEmpty()
         .withMessage('Date Cannot Be Empty')
-        .isInt({ min:1,max:31 })
+        .isInt({ min: 1, max: 31 })
         .withMessage('Please Enter Valid Date')
         .bail(),
     (req, res, next) => {
@@ -194,7 +194,7 @@ exports.createMessageCustomValidate = [
 ]
 
 
-exports.updateMessageStatusValidate=[
+exports.updateMessageStatusValidate = [
     check('id')
         .custom((list) => (typeof list === 'object' && list && Array.isArray(list) && list.length ? true : false))
         .withMessage('Id cannot be empty')
@@ -208,11 +208,11 @@ exports.updateMessageStatusValidate=[
         .isIn([2, 5])
         .withMessage('Please Enter Valid Code')
         .bail(),
-        (req, res, next) => {
-            const errors = validationResult(req);
-            if (!errors.isEmpty())
-                return res.status(422).json({ errors: errors.array() });
-            next();
-        },
+    (req, res, next) => {
+        const errors = validationResult(req);
+        if (!errors.isEmpty())
+            return res.status(422).json({ errors: errors.array() });
+        next();
+    },
 ]
 
